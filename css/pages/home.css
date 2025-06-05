@@ -28,8 +28,8 @@
 
   .hero-image-col {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
   }
 
 }
@@ -56,7 +56,7 @@
   font-family: var(--font-nunito-regular);
   font-size: 1rem;
   line-height: 1.0;
-  max-width: 32rem;
+  max-width: 37rem;
   margin-bottom: 1.5rem;
 }
 
@@ -94,6 +94,202 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 1570px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha ao início (esquerda) */
+    text-align: left; /* Alinha textos à esquerda */
+  }
+
+  .hero-logo {
+    height: 7rem; /* Diminui um pouco */
+    display: block;
+    margin: 0; /* Remove centralização */
+  }
+
+  .hero-title {
+    font-size: 4.125rem; /* Fonte menor */
+    text-align: left; /* Alinha à esquerda */
+  }
+
+  .hero-description {
+    font-size: 1.55rem; /* Fonte menor */
+    text-align: left; /* Alinha à esquerda */
+    margin-bottom: 1.6rem;
+  }
+
+  .event-detail-item {
+    font-size: 1.45rem; /* Fonte menor */
+    line-height: 1.3; /* Ajusta o espaçamento entre linhas */
+  }
+
+  .event-details {
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-image {
+    max-width: 40rem; /* Ajusta proporcionalmente */
+    margin-top: -150px; /* Ajusta a posição da imagem */
+    margin-right: 150px; /* Ajusta a posição da imagem */
+  }
+
+  .golden-line {
+    
+    max-width: 35rem;
+    margin: 0; /* Remove centralização */
+    margin-bottom: 2.175rem;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha ao início (esquerda) */
+    text-align: left; /* Alinha textos à esquerda */
+  }
+
+  .hero-logo {
+    height: 6rem; /* Diminui um pouco */
+    display: block;
+    margin: 0; /* Remove centralização */
+  }
+
+  .hero-title {
+    font-size: 3rem; /* Fonte menor */
+    text-align: left; /* Alinha à esquerda */
+  }
+
+  .hero-description {
+    font-size: 1.25rem; /* Fonte menor */
+    text-align: left; /* Alinha à esquerda */
+    margin-bottom: 1rem;
+  }
+
+  .event-detail-item {
+    font-size: 1.25rem; /* Fonte menor */
+  }
+
+  .event-details {
+    margin-bottom: 1rem;
+  }
+
+  .hero-image {
+    max-width: 30rem; /* Ajusta proporcionalmente */
+    margin-top: -50px; /* Ajusta a posição da imagem */
+    margin-right: 150px; /* Ajusta a posição da imagem */
+  }
+
+  .golden-line {
+    max-width: 30rem;
+    margin: 0; /* Remove centralização */
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+@media (max-width: 996px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-logo {
+    height: 14rem;
+    display: block;       /* transforma a imagem em bloco */
+    margin: 0 auto;       /* centraliza no eixo horizontal */
+  }
+
+  .hero-title {
+    font-size: 4.25rem;
+    text-align: center;
+  }
+
+.hero-description {
+  font-size: 1.725rem;
+  text-align: center; /* centraliza o texto dentro do <p> */
+  display: block;     /* só reforçando, mas todo <p> já é block */
+  margin: 0 auto;     /* centraliza horizontalmente se tiver largura fixa */
+  margin-bottom: 1.5rem; /* espaçamento inferior */
+}
+
+
+  .event-detail-item {
+    font-size: 1.525rem;
+  }
+  .event-details {
+    margin-bottom: 1.5rem;
+  }
+  .hero-image {
+    max-width: 38rem;
+        margin: 0px; /* centraliza horizontalmente */
+    margin-top: 40px; /* Ajusta a posição da imagem */
+  }
+  .golden-line {
+  max-width: 38rem;
+  margin: 0 auto; /* centraliza horizontalmente */
+  margin-bottom: 1.5rem; /* espaçamento inferior */
+}
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-logo {
+    height: 6rem;
+    display: block;       /* transforma a imagem em bloco */
+    margin: 0 auto;       /* centraliza no eixo horizontal */
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+.hero-description {
+  font-size: 1.125rem;
+  text-align: center; /* centraliza o texto dentro do <p> */
+  display: block;     /* só reforçando, mas todo <p> já é block */
+  margin: 0 auto;     /* centraliza horizontalmente se tiver largura fixa */
+  margin-bottom: 1.5rem; /* espaçamento inferior */
+}
+  .hero-image {
+    max-width: 32rem;
+    margin: 0px; /* centraliza horizontalmente */
+    margin-top: 40px; /* Ajusta a posição da imagem */
+  }
+
+  .event-detail-item {
+    font-size: 1.125rem;
+  }
+  .event-details {
+    margin-bottom: 1.5rem;
+  }
+    
+
+  .golden-line {
+  max-width: 28rem;
+  margin: 0 auto; /* centraliza horizontalmente */
+  margin-bottom: 1.5rem; /* espaçamento inferior */
+}
+
+}
+
 @media (max-width: 575.98px) {
   .hero-image-container {
     
@@ -103,81 +299,60 @@
   .hero-section {
     padding: 14px 12px 0px 12px; !important;
   }
-}
-
-
-@media (min-width: 576px) {
-  .hero-logo {
-    height: 4rem;
-  }
-
-  .hero-title {
-    font-size: 2.25rem;
-  }
-
-  .hero-description {
-    font-size: 1.125rem;
-  }
-
-  .event-detail-item {
-    font-size: 1.125rem;
-  }
-
-  .hero-image {
-    max-width: 24rem;
+    .hero-image {
+    max-width: 22rem;
+    margin: 0px; /* centraliza horizontalmente */
   }
 }
 
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .hero-description {
-    font-size: 1.5rem;
-  }
-
-  .event-detail-item {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 1571px) {
   .hero-section {
-    padding: 5rem 1rem 5rem 8rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha ao início (esquerda) */
+    text-align: left; /* Alinha textos à esquerda */
   }
 
   .hero-logo {
-    height: 8rem;
+    height: 7rem; /* Diminui um pouco */
+    display: block;
+    margin: 0; /* Remove centralização */
   }
 
   .hero-title {
-    font-size: 4.5rem;
+    font-size: 4.7rem; /* Fonte menor */
+    text-align: left; /* Alinha à esquerda */
+  }
+
+  .hero-description {
+    font-size: 1.65rem; /* Fonte menor */
+    text-align: left; /* Alinha à esquerda */
+    margin-bottom: 1.6rem;
+  }
+
+  .event-detail-item {
+    font-size: 1.45rem; /* Fonte menor */
+    line-height: 1.3; /* Ajusta o espaçamento entre linhas */
+  }
+
+  .event-details {
+    margin-bottom: 1.2rem;
   }
 
   .hero-image {
-    max-width: 400rem;
+    max-width: 40rem; /* Ajusta proporcionalmente */
+    margin-top: -150px; /* Ajusta a posição da imagem */
+    margin-right: 150px; /* Ajusta a posição da imagem */
   }
 
-  .hero-image-container {
-    justify-content: flex-start;
+  .golden-line {
+    
+    max-width: 35rem;
+    margin: 0; /* Remove centralização */
+    margin-bottom: 2.175rem;
   }
-  .event-detail-item {
-  font-size:1.5rem;
-  line-height: 1.1;
-  }
-.btn-lg-custom {
-  padding: 10px 290px !important; /* !important no lugar certo */
-  font-size: 1.5rem !important; /* se quiser ter certeza que sobrescreve */
-}
 
-
-}
-
-@media (min-width: 1200px) {
-  .hero-title {
-    font-size: 4.75rem;
-  }
 
 }
 
@@ -263,7 +438,7 @@
 
   /* Diminuir título no desktop */
   .problem-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -527,7 +702,7 @@
 
   /* Diminuir título no desktop */
   .section-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .speaker-image-container {
@@ -671,7 +846,7 @@
 
   /* Diminuir título no desktop */
   .section-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .target-item {
@@ -869,7 +1044,7 @@
 
   /* Diminuir título no desktop */
   .section-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
 }

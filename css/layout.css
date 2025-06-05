@@ -59,3 +59,10 @@
   margin-top: 0px;
 }
 }
+
+@media (max-width: 575.98px) {
+  body {
+    padding-left: 1rem;   /* ou o valor que quiser */
+    padding-right: 1rem;
+  }
+}

@@ -85,11 +85,7 @@ function initializeResponsiveBehaviors() {
   function adjustLayoutForViewport() {
     const viewport = window.innerWidth
 
-    // Adjust hero section height on mobile
-    const heroSection = document.querySelector(".hero-section")
-    if (heroSection && viewport < 768) {
-      heroSection.style.minHeight = "100vh"
-    }
+
 
     // Adjust speaker cards layout
     const speakerCards = document.querySelectorAll(".speaker-card")
