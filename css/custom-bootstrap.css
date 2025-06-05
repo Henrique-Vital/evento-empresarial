@@ -1,0 +1,185 @@
+/* Custom Bootstrap Overrides */
+
+/* Override Bootstrap container max-widths */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Custom spacing utilities */
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+@media (min-width: 576px) {
+  .py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+/* Custom gap utilities */
+.g-4 {
+  gap: 1.5rem !important;
+}
+
+.g-lg-5 {
+  gap: 1.5rem !important;
+}
+
+@media (min-width: 992px) {
+  .g-lg-5 {
+    gap: 3rem !important;
+  }
+}
+
+/* Custom margin utilities */
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+@media (min-width: 576px) {
+  .mb-5 {
+    margin-bottom: 4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mb-5 {
+    margin-bottom: 5rem !important;
+  }
+}
+
+/* Button customizations */
+.btn {
+  border-radius: 1.0rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 576px) {
+  .text-sm-start {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-lg-end {
+    text-align: right !important;
+  }
+}
+
+/* Display utilities */
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+/* Flexbox utilities */
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-items-flex-start {
+  align-items: flex-start !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+/* Position utilities */
+.position-relative {
+  position: relative !important;
+}
+
+/* Overflow utilities */
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* Order utilities */
+@media (max-width: 767.98px) {
+  .order-1 {
+    order: 1 !important;
+  }
+  .order-2 {
+    order: 2 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: 1 !important;
+  }
+  .order-md-2 {
+    order: 2 !important;
+  }
+}
+
+/* Hero Section Grid Fix */
+.hero-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-section .col-lg-6 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hero-section .col-lg-6 {
+    width: 50%;
+  }
+
+  .hero-section .col-lg-6:first-child {
+    padding-right: 1.5rem;
+  }
+
+  .hero-section .col-lg-6:last-child {
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* Garantir ordem correta */
+.order-1 {
+  order: 1 !important;
+}
+.order-2 {
+  order: 2 !important;
+}
+
+@media (min-width: 992px) {
+  .order-lg-1 {
+    order: 1 !important;
+  }
+  .order-lg-2 {
+    order: 2 !important;
+  }
+}

@@ -1,0 +1,78 @@
+/* base.css */
+/* Base Styles */
+@font-face {
+  font-family: "Cinzel Medium";
+  src: url("../fonts/Cinzel-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Italic";
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans Bold";
+  src: url("../fonts/NunitoSans7pt-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("../fonts/NunitoSans7pt-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OCRA Extended";
+  src: url("../fonts/OCRAExtended.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-gold: #d7b56d;
+  --color-gold-light: #dcbe7e;
+  --color-gold-lighter: #eedfc1;
+  --color-gold-border: #645433;
+  --color-gray-dark: #434242;
+  --color-gray-darker: #2b2a29;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --font-cinzel: "Cinzel Medium", serif;
+  --font-montserrat-bold: "Montserrat Bold", sans-serif;
+  --font-montserrat-italic: "Montserrat Italic", sans-serif;
+  --font-nunito-bold: "Nunito Sans Bold", sans-serif;
+  --font-nunito-regular: "Nunito Sans Regular", sans-serif;
+  --font-ocra: "OCRA Extended", monospace;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-nunito-regular);
+  line-height: 1.6;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}

@@ -1,0 +1,356 @@
+/* Component Styles */
+
+/* Buttons */
+.hero-cta-btn{
+  color: var(--color-black) !important;
+  border: 2px solid var(--color-gold-border);
+  font-family: var(--font-montserrat-bold);
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(to top, var(--color-gold), var(--color-gold-light), var(--color-gold-lighter));
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(215, 181, 109, 0.3);
+}
+
+.speakers-cta-btn,
+.target-cta-btn,
+.final-cta-btn,
+.location-cta-btn {
+  color: #2B2A29 !important; 
+  border: 2px solid var(--color-gold-border);
+  font-family: var(--font-montserrat-bold);
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+  background: #D7B56D;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(215, 181, 109, 0.3);
+}
+
+
+
+.hero-cta-btn:hover,
+.speakers-cta-btn:hover,
+.target-cta-btn:hover,
+.final-cta-btn:hover,
+.location-cta-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(215, 181, 109, 0.4);
+  color: var(--color-black) !important;
+}
+
+.speakers-cta-btn {
+  color: #2B2A29 !important; /* cor do texto */
+    background-color: var(--color-gold)!important; /* cor de fundo */
+}
+
+.speakers-cta-btn:hover {
+  color: var(--color-gray) !important;
+}
+
+.final-cta-btn {
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .hero-cta-btn {
+    display: block;      /* faz o botão ocupar a linha toda */
+    margin: 0 auto;      /* centraliza horizontalmente */
+  }
+  .container {
+    margin-top: -60px;!important; /* ajusta o espaçamento superior */
+  }
+}
+
+
+@media (min-width: 576px) {
+  .hero-cta-btn,
+  .speakers-cta-btn,
+  .target-cta-btn,
+  .location-cta-btn {
+    font-size: 1.125rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .final-cta-btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-cta-btn,
+  .speakers-cta-btn,
+  .target-cta-btn,
+  .location-cta-btn {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-cta-btn,
+  .speakers-cta-btn,
+  .target-cta-btn,
+  .location-cta-btn {
+    font-size: 2.175rem;
+    padding: 1.5rem 5rem;
+    color: #2B2A29 !important; /* cor do texto */
+    background-color: var(--color-gold)!important; /* cor de fundo */
+  }
+
+  .final-cta-btn {
+    font-size: 1.75rem;
+    padding: 1.75rem 5rem;
+  }
+}
+/* Benefits List */
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 0rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.benefit-item:hover {
+  background-color: rgba(215, 181, 109, 0.05);
+  transform: scale(1.02);
+}
+
+.benefit-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+  transform: rotate(12deg);
+}
+
+.benefit-item p {
+  margin: 0;
+  font-family: var(--font-nunito-regular);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 576px) {
+  .benefits-list {
+    gap: 1rem;
+  }
+
+  .benefit-item {
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .benefit-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .benefit-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .benefit-item {
+    gap: 0.8rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .benefit-item p {
+    font-size: 1.8rem;
+  }
+    .benefit-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Target List */
+.target-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+.target-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.target-item:hover {
+  transform: translateX(10px);
+}
+
+.target-arrow {
+  color: var(--color-gold);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.target-item:hover .target-arrow {
+  transform: scale(1.25);
+}
+
+.target-item p {
+  margin: 0;
+  font-family: var(--font-nunito-regular);
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.target-item:hover p {
+  color: var(--color-gold);
+}
+
+@media (max-width: 575.98px) {
+  .contrast-item {
+    display: flex;    
+    justify-content: center; /* centraliza no eixo vertical */
+    align-items: center; /* centraliza no eixo horizontal */
+    transition: all 0.3s ease;
+    text-align: center; /* caso tenha texto e queira centralizar também */
+  }
+}
+
+
+@media (min-width: 576px) {
+  .target-list {
+    gap: 1.5rem;
+  }
+
+  .target-item {
+    gap: 1rem;
+  }
+
+  .target-arrow {
+    font-size: 1.5rem;
+  }
+
+  .target-item p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .target-item {
+    gap: 1.25rem;
+  }
+  .target-list {
+    margin-bottom: 10rem;
+  }
+}
+
+/* Contrast Section */
+.contrast-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contrast-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.contrast-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.contrast-item:hover .contrast-icon {
+  transform: rotate(12deg);
+}
+
+.contrast-title {
+  margin: 0 0 0.25rem 0;
+  font-family: var(--font-montserrat-bold);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contrast-subtitle {
+  margin: 0;
+  font-family: var(--font-nunito-regular);
+  font-size: 1rem;
+}
+
+.contrast-description {
+  margin: 0;
+  font-weight: 700;
+  font-family: var(--font-montserrat-bold);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contrast-item:first-child:hover .contrast-title {
+  color: #ef4444;
+}
+
+.contrast-item:last-child:hover .contrast-description {
+  color: #22c55e;
+}
+
+@media (min-width: 576px) {
+  .contrast-item {
+    gap: 1rem;
+  }
+
+  .contrast-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contrast-title,
+  .contrast-subtitle,
+  .contrast-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contrast-item {
+    gap: 1.25rem;
+    padding-left: 120px;
+    
+  }
+    .contrast-title,
+  .contrast-subtitle,
+  .contrast-description {
+    font-size: 1.7rem;
+    
+  }
+    .contrast-icon {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 0.6rem;
+  }
+}
